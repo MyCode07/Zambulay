@@ -1,0 +1,99 @@
+.footer {
+    padding: 80px 0;
+
+    @media (max-width:1024px){
+        padding: 64px 0;
+    }
+
+    // .footer__container
+    &__container {}
+
+    // .footer__body
+    &__body {}
+
+    // .footer__top
+    &__top {
+        display: flex;
+        gap: 80px;
+
+        @media (max-width:1024px) {
+            gap: 40px;
+        }
+
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+
+    nav {
+        display: grid;
+        gap: 24px 80px;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width:1024px) {
+            gap: 40px;
+        }
+
+        @media (max-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        li {
+            &:not(:has(a)) {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 110%;
+                margin-bottom: 16px;
+            }
+
+            &:has(a):not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            a {
+                opacity: 0.7;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 130%;
+            }
+        }
+    }
+
+    // .footer__logo
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+
+        .logo {
+            font-family: "Space Grotesk";
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 75%;
+        }
+    }
+
+    // .footer__bottom
+    &__bottom {
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid rgba($color: $black, $alpha: 0.2);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+
+        p,
+        a {
+            opacity: 0.7;
+        }
+    }
+}

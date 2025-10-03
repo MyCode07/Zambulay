@@ -1,0 +1,112 @@
+.header {
+    color: $white;
+    padding: 18px 0;
+
+    @media (max-width:1024px) {
+        padding: 20px 0;
+    }
+
+    // .header__container
+    &__container {}
+
+    // .header__body
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    // .header__logo
+    &__logo {
+        font-family: "Space Grotesk";
+        font-weight: 700;
+        line-height: 75%;
+        @include adaptive-value('font-size', 24, 19, 1);
+    }
+
+    nav {
+        margin-inline: auto;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 110%;
+            }
+        }
+
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
+
+    .lang {
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
+
+    ._btn {
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
+
+    // .header__burger
+    &__burger {
+        @media (min-width:1025px) {
+            display: none;
+        }
+
+        width: 24px;
+        height: 24px;
+        position: relative;
+        margin-left: auto;
+
+        span {
+            pointer-events: none;
+            position: absolute;
+            width: 16px;
+            height: 1.5px;
+            border-radius: 100px;
+            background-color: $white;
+            top: 50%;
+            left: 50%;
+
+            &:first-child {
+                transform: translate(-50%, calc(-50% - 3px));
+            }
+
+            &:last-child {
+                transform: translate(-50%, calc(-50% + 3px));
+            }
+        }
+    }
+}
+
+.lang {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    img,
+    svg {
+        width: 10px;
+        height: 5px;
+        flex: 0 0 auto;
+        cursor: pointer;
+    }
+
+    li:not(.current-lang) {
+        display: none;
+    }
+}
