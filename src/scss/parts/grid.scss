@@ -2,9 +2,22 @@
     display: grid;
     gap: 24px;
 
+    @media (max-width:768px) {
+        gap: 16px;
+    }
+
     // .grid-2
     &-2 {
         grid-template-columns: repeat(2, 1fr);
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .grid-3
+    &-3 {
+        grid-template-columns: repeat(3, 1fr);
 
         @media (max-width:768px) {
             grid-template-columns: 1fr;
@@ -17,7 +30,6 @@
 
         @media (max-width:768px) {
             grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
         }
 
         @media (max-width:600px) {

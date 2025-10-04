@@ -120,13 +120,30 @@ h4 {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110%;
+
+    @media (max-width:1024px) {
+        font-size: 20px;
+    }
+}
+
 h6 {
-    font-weight: 700;
+    font-weight: 600;
+}
+
+._desktop {
+    @media (max-width:768px) {
+        display: none !important;
+    }
+}
+
+._mobile {
+    @media (min-width:769px) {
+        display: none !important;
+    }
 }
 
 ._btn {
@@ -138,20 +155,40 @@ h6 {
     font-size: 16px;
     font-weight: 500;
     line-height: 110%;
-    height: 48px;
+    height: 56px;
     border-radius: 100px;
     padding: 14px 24px;
+
+    @media (max-width:768px) {
+        height: 48px;
+    }
+
+    transition: all 0.3s ease 0s;
 
     // ._btn-black
     &-black {
         color: $white;
         background-color: $black;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $black;
+                background-color: $white;
+            }
+        }
     }
 
     // ._btn-white
     &-white {
         color: $black;
         background-color: $white;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $white;
+                background-color: $black;
+            }
+        }
     }
 }
 

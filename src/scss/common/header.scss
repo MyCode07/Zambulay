@@ -58,6 +58,54 @@
                 font-weight: 500;
                 line-height: 110%;
             }
+
+            li {
+                position: relative;
+
+                &:hover {
+                    ul {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+                }
+
+                ul {
+                    position: absolute;
+                    left: 0;
+                    top: calc(100% + 16px);
+                    z-index: 2;
+                    padding: 16px;
+                    border-radius: 24px;
+                    background: rgba(255, 255, 255, 0.10);
+                    backdrop-filter: blur(60px);
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 0.3s ease 0s;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    white-space: nowrap;
+                    align-items: flex-start;
+                    text-align: left;
+
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        left: 0;
+                        top: -16px;
+                        height: 32px;
+                    }
+
+                    a {
+                        @media (any-hover: hover) {
+                            &:hover {
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         @media (max-width:1024px) {
@@ -72,6 +120,8 @@
     }
 
     ._btn {
+        height: 48px;
+
         @media (max-width:1024px) {
             display: none;
         }
@@ -87,6 +137,8 @@
         height: 24px;
         position: relative;
         margin-left: auto;
+
+        transition: transform 0.3s ease 0s;
 
         span {
             pointer-events: none;
@@ -106,6 +158,10 @@
                 transform: translate(-50%, calc(-50% + 3px));
             }
         }
+
+        &._active {
+            transform: rotate(90deg);
+        }
     }
 }
 
@@ -115,15 +171,17 @@
     line-height: 110%;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 7px;
 
     img,
     svg {
         width: 10px;
-        height: 5px;
+        height: 10px;
         flex: 0 0 auto;
         cursor: pointer;
+        fill: none;
+        stroke: $white;
+        stroke-width: 2px;
     }
 
     li:not(.current-lang) {

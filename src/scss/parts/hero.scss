@@ -49,17 +49,7 @@
             object-position: top;
         }
 
-        ._desktop {
-            @media (max-width:768px) {
-                display: none;
-            }
-        }
-
-        ._mobile {
-            @media (min-width:769px) {
-                display: none;
-            }
-        }
+        
     }
 
     // .hero__container
