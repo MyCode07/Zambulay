@@ -8,9 +8,11 @@
 // import { runTicker } from "./static/ticker.js";
 // import { Fancybox } from "@fancyapps/ui";
 // // import { animateOrder } from "./parts/animations.js";
-// import { stickyHeader } from "./parts/header.js";
 
-// stickyHeader();
+import "./parts/tabs.js";
+import { stickyHeader } from "./parts/header.js";
+
+stickyHeader();
 // // animateOrder();
 // accorden();
 // runTicker()
@@ -26,3 +28,11 @@ document.addEventListener('click', function (e) {
         document.querySelector('.pages').classList.toggle('_hide');
     }
 })
+
+document.getElementById('mySelect').addEventListener('change', function () {
+    if (this.value === "") {
+        this.classList.remove('_active');
+    } else {
+        this.classList.add('_active');
+    }
+});
