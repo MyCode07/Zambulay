@@ -10,6 +10,7 @@
 // // import { animateOrder } from "./parts/animations.js";
 
 import "./parts/tabs.js";
+import "./parts/select.js";
 import { stickyHeader } from "./parts/header.js";
 
 stickyHeader();
@@ -28,11 +29,3 @@ document.addEventListener('click', function (e) {
         document.querySelector('.pages').classList.toggle('_hide');
     }
 })
-
-document.getElementById('mySelect').addEventListener('change', function () {
-    if (this.value === "") {
-        this.classList.remove('_active');
-    } else {
-        this.classList.add('_active');
-    }
-});
