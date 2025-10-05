@@ -375,7 +375,7 @@
 }
 
 .contact {
-    @media (min-width:1025px){
+    @media (min-width:1025px) {
         margin-bottom: 80px;
     }
 
@@ -486,5 +486,62 @@
                 pointer-events: none;
             }
         }
+    }
+}
+
+.arbitration {
+
+    // .arbitration-content
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        p {
+            flex: 1 1 auto;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 120%;
+            opacity: 0.7;
+            max-width: 400px;
+        }
+
+        ._btn {
+            @media (min-width:769px) {
+                width: fit-content;
+            }
+        }
+    }
+
+    .grid {
+        @media (max-width:768px) {
+            gap: 40px;
+        }
+    }
+
+    .img {
+        margin-right: 46px;
+        border-radius: 40px;
+        height: fit-content;
+        overflow: hidden;
+        background-color: rgba($color: $black, $alpha: 0.03);
+
+        @media (max-width:768px) {
+            margin-right: 0;
+            border-radius: 32px;
+        }
+
+        img,
+        picture {
+            width: 100%;
+        }
+    }
+
+    ._btn {}
+}
+
+.text {
+    @media (min-width:1025px) {
+        margin-bottom: 80px;
     }
 }
