@@ -198,7 +198,7 @@
 
         h1,
         p {
-            max-width: 520px;
+            max-width: 520px !important;
         }
     }
 
@@ -317,7 +317,7 @@
         // .hero-googleads-grey-2
         &-2 {
             .hero__body {
-                margin-left: 0;
+                margin-left: 0 !important;
 
                 img {
                     @media (min-width:769px) {
