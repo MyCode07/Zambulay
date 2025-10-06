@@ -7,11 +7,11 @@
 // load mixins
 @import "mixins";
 // load swiper
-@import "../../node_modules/swiper/swiper";
+// @import "../../node_modules/swiper/swiper";
 // load fancybox
-@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox";
+// @import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox";
 // load dhx
-// @import "parts/dhx-suite.min";
+@import "parts/dhx-suite.min";
 // load common
 @import "common/common";
 // load header

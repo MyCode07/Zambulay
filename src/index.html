@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="tab-contnet">
-                    <div class="calc-item _active" data-tab-content="0">
+                    <div class="calc-item " data-tab-content="0">
                         <div class="grid grid-2">
                             <div class="calc-item__content">
                                 <div class="img">
@@ -113,45 +113,146 @@
                                     </li>
                                 </ol>
                             </div>
-                            <div class="form">
-                                <div class="progress"></div>
-
-                                <div class="form__title">
-                                    <h4>Ваши данные</h4>
-                                    <p>Для оформления заявки</p>
-                                </div>
-
-                                <form action="#">
-                                    <div class="form__item">
-                                        <input type="text" placeholder="ФИО">
-                                        <span class="error">Напишите ФИО</span>
-                                    </div>
-                                    <div class="form__item">
-                                        <input type="email" placeholder="Email">
-                                    </div>
-                                    <div class="form__item">
-                                        <input type="text" placeholder="Telegram">
-                                    </div>
-                                    <div class="form__item form__select">
-                                        <p>Как планируете использовать карту?</p>
-                                        <select id="mySelect">
-                                            <option value disabled selected>Выберите нужный вариант</option>
-                                            <option value="1">Option 1</option>
-                                            <option value="2">Option 2</option>
-                                            <option value="3">Option 3</option>
-                                        </select>
-                                    </div>
-                                    <button class="_btn _btn-black">Оформить карту</button>
-                                </form>
-
-                            </div>
+                            @@include('html/parts/form.html',{})
                         </div>
                     </div>
-                    <div class="calc-item" data-tab-content="1">
-                        content 1
+                    <div class="calc-item " data-tab-content="1">
+                        <div class="grid grid-2">
+                            <div class="calc-item__content">
+                                <div class="calc-func">
+                                    <h4>Рассчитайте платеж</h4>
+                                    <div class="input-range">
+                                        <p>Cумма кредита</p>
+                                        <div class="input-range__output">
+                                            <div class="current-value">
+                                                <span>10 000 </span> USD
+                                            </div>
+                                            <div class="max-value">
+                                                до <span>300 000</span> USD
+                                            </div>
+                                        </div>
+                                        <input type="range" name="credit-value" min="10000" max="300000" value="100"
+                                            step="100">
+                                    </div>
+                                    <div class="input-range">
+                                        <p>Срок кредита</p>
+                                        <div class="input-range__output">
+                                            <div class="current-value">
+                                                <span>10 </span> дней
+                                            </div>
+                                            <div class="max-value">
+                                                до <span>120 </span> дней
+                                            </div>
+                                        </div>
+                                        <input type="range" name="credit-days" min="10" max="120" value="10" step="1">
+                                    </div>
+                                    <div class="calc-func__total">
+                                        <div class="total-value">
+                                            <label>105 000 USD</label>
+                                            <span>Сумма к возврату</span>
+                                            <input type="hidden" name="credit-total" readonly value="105 000 USD">
+                                        </div>
+                                        <div class="total-percent">
+                                            <label>5%</label>
+                                            <span>Процентная ставка</span>
+                                            <input type="hidden" name="credit-percents" readonly value="5%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <ol>
+                                    <li>
+                                        <img src="img/icons/doc.svg" alt="">
+                                        <span>Ставка от 5% и гибкие условия.</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/icons/doc.svg" alt="">
+                                        <span>Перевод на счет под рекламные цели.</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/icons/doc.svg" alt="">
+                                        <span>Для арбитражных команд от 6 месяцев на рынке и с оборотом от $3 в
+                                            месяц.</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            @@include('html/parts/form.html',{})
+                        </div>
                     </div>
-                    <div class="calc-item" data-tab-content="2">
-                        content 2
+                    <div class="calc-item _active" data-tab-content="2">
+                        <div class="grid grid-2">
+                            <div class="calc-item__content">
+                                <div class="calc-func">
+                                    <h4>Параметры вклада</h4>
+                                    <div class="input-range">
+                                        <p>Cумма вклада</p>
+                                        <div class="input-range__output">
+                                            <div class="current-value">
+                                                <span>10 000 </span> USD
+                                            </div>
+                                            <div class="max-value">
+                                                до <span>300 000</span> USD
+                                            </div>
+                                        </div>
+                                        <input type="range" name="credit-value" min="10000" max="300000" value="100"
+                                            step="100">
+                                    </div>
+
+                                    <div class="input-button">
+                                        <p>Срок вклада</p>
+                                        <div>
+                                            <label for="deposit-period-3">
+                                                3 мес
+                                                <input type="radio" checked id="deposit-period-3" name="deposit-period"
+                                                    value="3 мес">
+                                            </label>
+                                            <label for="deposit-period-6">
+                                                6 мес
+                                                <input type="radio" id="deposit-period-6" name="deposit-period"
+                                                    value="6 мес">
+                                            </label>
+                                            <label for="deposit-period-12">
+                                                12 мес
+                                                <input type="radio" id="deposit-period-12" name="deposit-period"
+                                                    value="12 мес">
+                                            </label>
+                                            <label for="deposit-period-18">
+                                                18 мес
+                                                <input type="radio" id="deposit-period-18" name="deposit-period"
+                                                    value="18 мес">
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="calc-func__total">
+                                        <div class="total-value">
+                                            <label>105 000 USD</label>
+                                            <span>Сумма к возврату</span>
+                                            <input type="hidden" name="deposit-total" readonly value="105 000 USD">
+                                        </div>
+                                        <div class="total-percent">
+                                            <label>19%</label>
+                                            <span>Процентная ставка</span>
+                                            <input type="hidden" name="deposit-percents" readonly value="19%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <ol>
+                                    <li>
+                                        <img src="img/icons/doc.svg" alt="">
+                                        <span>Максимальная ставка 19% в USDT.</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/icons/doc.svg" alt="">
+                                        <span>Полное или частичное изъятие онлайн. </span>
+                                    </li>
+                                    <li>
+                                        <img src="img/icons/doc.svg" alt="">
+                                        <span>Ежемесячное начисление %</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            @@include('html/parts/form.html',{})
+                        </div>
                     </div>
                 </div>
             </div>
