@@ -30,4 +30,8 @@ document.addEventListener('click', function (e) {
         menu.classList.remove('_open');
         unLockPadding();
     }
+
+    if (targetEl.classList.contains('flip-lang')) {
+        targetEl.closest('.lang').classList.toggle('_open');
+    }
 })

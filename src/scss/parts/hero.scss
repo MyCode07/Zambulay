@@ -256,6 +256,20 @@
                 height: 100%;
                 object-fit: cover;
 
+                picture {
+                    &:has(._desktop) {
+                        @media (max-width:1024px) {
+                            display: none !important;
+                        }
+                    }
+
+                    &:has(._mobile) {
+                        @media (max-width:1024px) {
+                            display: block !important;
+                        }
+                    }
+                }
+
                 &._desktop {
                     @media (max-width:1024px) {
                         display: none !important;

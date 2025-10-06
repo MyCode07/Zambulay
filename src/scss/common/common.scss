@@ -134,6 +134,20 @@ h6 {
     font-weight: 600;
 }
 
+picture {
+    &:has(._desktop) {
+        @media (max-width:768px) {
+            display: none !important;
+        }
+    }
+
+    &:has(._mobile) {
+        @media (min-width:769px) {
+            display: none !important;
+        }
+    }
+}
+
 ._desktop {
     @media (max-width:768px) {
         display: none !important;
@@ -158,6 +172,7 @@ h6 {
     height: 56px;
     border-radius: 100px;
     padding: 14px 24px;
+    border: 1px solid;
 
     @media (max-width:768px) {
         height: 48px;
@@ -169,11 +184,12 @@ h6 {
     &-black {
         color: $white;
         background-color: $black;
+        border-color: $black;
 
         @media (any-hover: hover) {
             &:hover {
-                color: $black;
                 background-color: $white;
+                color: $black;
             }
         }
     }
@@ -182,11 +198,13 @@ h6 {
     &-white {
         color: $black;
         background-color: $white;
+        border-color: $white;
 
         @media (any-hover: hover) {
             &:hover {
                 color: $white;
                 background-color: $black;
+                border-color: $black;
             }
         }
     }

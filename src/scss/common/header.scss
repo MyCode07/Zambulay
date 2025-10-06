@@ -21,9 +21,9 @@
 
     // .header__container
     &__container {
-        @media (min-width:1025px) {
-            max-width: calc(100% - 40px);
-        }
+        // @media (min-width:1025px) {
+        //     max-width: calc(100% - 40px);
+        // }
     }
 
     // .header__body
@@ -175,19 +175,43 @@
     display: flex;
     align-items: center;
     gap: 7px;
+    position: relative;
 
     img,
     svg {
-        width: 10px;
+        width: 12px;
         height: 10px;
         flex: 0 0 auto;
         cursor: pointer;
         fill: none;
         stroke: currentColor;
         stroke-width: 2px;
+        transition: transform 0.3s ease 0s;
+
+        * {
+            pointer-events: none;
+        }
     }
 
     li:not(.current-lang) {
         display: none;
+        position: absolute;
+        top: calc(100% + 4px);
+        flex: 0 0 auto;
+
+        a {
+            line-height: 1;
+        }
+    }
+
+    &._open {
+        li:not(.current-lang) {
+            display: block;
+        }
+
+        svg,
+        img {
+            transform: rotate(180deg);
+        }
     }
 }
