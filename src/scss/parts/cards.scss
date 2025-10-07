@@ -122,13 +122,19 @@
         max-width: 590px;
     }
 
+    &:last-child {
+        p {
+            max-width: 590px;
+        }
+    }
+
     p {
         margin-top: 12px;
         font-size: 20px;
         font-weight: 500;
         line-height: 120%;
         opacity: 0.7;
-        max-width: 590px;
+        max-width: 425px;
 
         @media (max-width:1024px) {
             font-size: 16px;
@@ -172,8 +178,7 @@
                 height: 28px;
                 margin-top: -3px;
 
-                @media (max-width:1024px) {
-                }
+                @media (max-width:1024px) {}
 
                 @media (max-width:1024px) {
                     width: 22px;
@@ -204,6 +209,12 @@
 
     h3 {}
 
+    &:first-child {
+        p {
+            max-width: 228px;
+        }
+    }
+
     p {
         margin-top: 12px;
         font-size: 20px;
@@ -218,6 +229,10 @@
         @media (max-width:768px) {
             font-size: 13px;
             max-width: 260px;
+        }
+
+        a {
+            text-decoration: underline;
         }
     }
 }

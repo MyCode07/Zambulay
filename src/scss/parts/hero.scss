@@ -74,16 +74,14 @@
         line-height: 120%;
         max-width: 700px;
         font-size: 20px;
-        margin: 40px 0;
+        margin: 16px 0;
 
         @media (max-width:1024px) {
             max-width: 600px;
-            margin: 25px 0;
         }
 
         @media (max-width:768px) {
             font-size: 16px;
-            margin: 16px 0;
         }
     }
 

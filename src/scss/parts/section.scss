@@ -45,13 +45,22 @@
 .calc {
     position: relative;
     padding: 120px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-inline: 10px;
 
     @media (max-width:1024px) {
         padding: 64px 0;
+        margin-inline: 0;
     }
 
     .section__top {
         color: $white;
+        margin-bottom: 40px;
+
+        @media (max-width:1204px) {
+            margin-bottom: 48px;
+        }
     }
 
     // .calc-bgi
@@ -149,6 +158,15 @@
         }
 
         .form {}
+
+        // .calc-item__credit
+        &__credit {
+            ol > :last-child {
+                @media (min-width:1025px) {
+                    width: 110%;
+                }
+            }
+        }
     }
 
     .tab {
@@ -420,7 +438,8 @@
         }
 
         h2 {
-            max-width: 450px;
+            text-transform: unset;
+            max-width: 370px;
         }
 
         p {
@@ -454,9 +473,13 @@
     position: relative;
     padding: 120px 0;
     background-color: rgba($color: $black, $alpha: 0.03);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-inline: 10px;
 
     @media (max-width:1024px) {
         padding: 64px 0;
+        margin-inline: 0;
     }
 
     .grid {
