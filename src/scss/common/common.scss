@@ -6,7 +6,7 @@ body {
     scroll-behavior: smooth;
     font-style: normal;
     letter-spacing: normal;
-    font-family: "TT Firs Neue";
+    font-family: "TTFirsNeue";
     color: $black;
     font-size: 16px;
     line-height: normal;
@@ -165,8 +165,7 @@ picture {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: "TT Firs Neue";
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 110%;
     height: 56px;
@@ -175,6 +174,7 @@ picture {
     border: 1px solid;
 
     @media (max-width:768px) {
+        font-size: 16px;
         height: 48px;
     }
 
@@ -215,7 +215,8 @@ picture {
     align-items: center;
     gap: 8px;
 
-    a {
+    a,
+    button {
         flex: 0 0 auto;
         display: flex;
         align-items: center;
@@ -240,6 +241,10 @@ picture {
     }
 }
 
+[data-open-popup] * {
+    pointer-events: none;
+}
+
 [data-tab-content]:not(._active) {
     display: none !important;
 }
@@ -253,6 +258,13 @@ picture {
     h5,
     h6 {
         margin-bottom: 1em;
+        margin-top: 1em;
+        text-transform: unset;
+
+        a {
+            color: #6799E3;
+            font-size: inherit;
+        }
     }
 
     p,
@@ -269,6 +281,10 @@ picture {
         @media (max-width:768px) {
             font-size: 14px;
         }
+
+        a {
+            color: #6799E3;
+        }
     }
 
     & > :last-child {
@@ -276,10 +292,14 @@ picture {
     }
 
     ul {
-        padding-left: 0.25em;
+        padding-left: 1.5em;
 
         & > :not(:last-child) {
             margin-bottom: 1em;
+        }
+
+        li {
+            list-style: disc;
         }
     }
 
@@ -310,13 +330,14 @@ picture {
     }
 
     figcaption {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 145%;
         display: block;
         margin-top: 12px;
+        color: rgba($color: $black, $alpha: 0.70);
 
         @media (max-width:768px) {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 }

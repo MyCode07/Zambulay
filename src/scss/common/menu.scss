@@ -69,7 +69,9 @@
     }
 
     ._social {
-        a {
+
+        a,
+        button {
             color: $white;
             background-color: rgba($color: $white, $alpha: 0.3);
         }

@@ -13,6 +13,10 @@
             top: 10px;
             padding: 10px 10px 10px 15px;
         }
+
+        nav ul ul{
+            background-color: rgba($color: $black, $alpha: 0.3);
+        }
     }
 
     &._dark {
@@ -125,6 +129,7 @@
 
     ._btn {
         height: 48px;
+        font-size: 16px;
 
         @media (max-width:1024px) {
             display: none;

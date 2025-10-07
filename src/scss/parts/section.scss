@@ -14,11 +14,33 @@
     // .section__top
     &__top {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
+
+        @media (max-width:1024px) {
+            margin-bottom: 40px;
+        }
     }
 }
 
-.ads {}
+.ads {
+    .grid-2 {
+        @media (min-width:601px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .ads-item {
+            @media (min-width:769px) {
+                grid-column: unset;
+            }
+
+            @media (max-width: 768px) and (min-width: 601px) {
+                &:last-child {
+                    grid-column: unset;
+                }
+            }
+        }
+    }
+}
 
 .calc {
     position: relative;
@@ -643,7 +665,8 @@
                 margin-top: 32px;
             }
 
-            a {
+            a,
+            button {
                 background-color: $white;
                 color: $black;
 
@@ -681,9 +704,9 @@
     }
 }
 
-.arbitration {
+.cabinet {
 
-    // .arbitration-content
+    // .cabinet-content
     &-content {
         display: flex;
         flex-direction: column;

@@ -1,4 +1,3 @@
-import { isMobile } from "../utils/isMobile.js";
 import { lockPadding, unLockPadding } from "../utils/lockPadding.js";
 
 
@@ -21,7 +20,7 @@ document.addEventListener('click', function (e) {
         closePopup(targetEl)
     }
 
-    if (targetEl.classList.contains('popup-close') || targetEl.hasAttribute('data-close-popup')) {
+    if (targetEl.classList.contains('popup__close') || targetEl.hasAttribute('data-close-popup')) {
         const popup = targetEl.closest('.popup');
         closePopup(popup)
     }

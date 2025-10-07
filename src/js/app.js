@@ -1,6 +1,7 @@
 import "./parts/menu.js";
 import "./parts/tabs.js";
 import "./parts/calc.js";
+import "./parts/popup.js";
 import "./parts/select.js";
 import { stickyHeader } from "./parts/header.js";
 
