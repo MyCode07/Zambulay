@@ -3,7 +3,7 @@ function scrollToTop() {
 
     if (!toTopBtn) return
 
-    if (window.scrollY >= 1000) {
+    if (window.scrollY >= 1200) {
         toTopBtn.classList.add('_active');
     }
     else {
@@ -19,4 +19,4 @@ function scrollToTop() {
 export const toTop = () => {
     scrollToTop();
     window.addEventListener('scroll', scrollToTop);
-} 
+}

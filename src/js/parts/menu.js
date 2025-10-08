@@ -31,7 +31,7 @@ document.addEventListener('click', function (e) {
         unLockPadding();
     }
 
-    if (targetEl.classList.contains('flip-lang')) {
+    if (targetEl.classList.contains('flip-lang') || targetEl.classList.contains('current-lang')) {
         targetEl.closest('.lang').classList.toggle('_open');
     }
 })

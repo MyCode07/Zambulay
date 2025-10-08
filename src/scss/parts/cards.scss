@@ -64,6 +64,10 @@
 
         @media (max-width:768px) {
             font-size: 16px;
+
+            span {
+                display: none;
+            }
         }
     }
 }
@@ -120,6 +124,7 @@
 
     h3 {
         max-width: 590px;
+        line-height: 100%;
     }
 
     &:last-child {
@@ -134,7 +139,7 @@
         font-weight: 500;
         line-height: 120%;
         opacity: 0.7;
-        max-width: 425px;
+        max-width: 419px;
 
         @media (max-width:1024px) {
             font-size: 16px;
@@ -215,6 +220,14 @@
         }
     }
 
+    &:last-child {
+        p {
+            @media (max-width:768px) {
+                max-width: 190px;
+            }
+        }
+    }
+
     p {
         margin-top: 12px;
         font-size: 20px;
@@ -228,7 +241,7 @@
 
         @media (max-width:768px) {
             font-size: 13px;
-            max-width: 260px;
+            max-width: 235px;
         }
 
         a {

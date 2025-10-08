@@ -33,6 +33,11 @@
         ._btn {
             width: 100%;
         }
+
+        ._btn-white{
+            background-color: rgba($color: $white, $alpha: 0.3);
+            color: $white;
+        }
     }
 
     .lang {}
@@ -45,7 +50,7 @@
         ul {
             li {
                 &:not(:last-child) {
-                    margin-bottom: 16px;
+                    margin-bottom: 8px;
                 }
 
                 a {

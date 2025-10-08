@@ -1,5 +1,6 @@
 .header {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     z-index: 10;
     left: 0;
     top: 0;
@@ -7,16 +8,15 @@
     color: $white;
 
     &._sticky {
-        .header__body {
-            margin-top: 10px;
-            background-color: #5178B3;
-            top: 10px;
-            padding: 10px 10px 10px 15px;
-        }
-
-        nav ul ul{
-            background-color: rgba($color: $black, $alpha: 0.3);
-        }
+        // .header__body {
+        //     margin-top: 10px;
+        //     background-color: #5178B3;
+        //     top: 10px;
+        //     padding: 10px 10px 10px 15px;
+        // }
+        // nav ul ul{
+        //     background-color: rgba($color: $black, $alpha: 0.3);
+        // }
     }
 
     &._dark {
@@ -196,6 +196,10 @@
         * {
             pointer-events: none;
         }
+    }
+
+    .current-lang * {
+        pointer-events: none;
     }
 
     li:not(.current-lang) {

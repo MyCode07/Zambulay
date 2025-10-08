@@ -4,8 +4,10 @@ import "./parts/calc.js";
 import "./parts/popup.js";
 import "./parts/select.js";
 import { stickyHeader } from "./parts/header.js";
+import { toTop } from "./static/to-top.js";
 
 stickyHeader();
+toTop();
 
 
 document.addEventListener('click', function (e) {

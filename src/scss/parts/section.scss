@@ -40,6 +40,12 @@
             }
         }
     }
+
+    .section__top {
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
 }
 
 .calc {
@@ -60,6 +66,12 @@
 
         @media (max-width:1204px) {
             margin-bottom: 48px;
+        }
+
+        h2 br {
+            @media (min-width:601px) {
+                display: none;
+            }
         }
     }
 
@@ -121,6 +133,7 @@
 
                 @media (max-width:768px) {
                     padding: 0 20px;
+                    gap: 20px;
                 }
 
                 li {
@@ -161,7 +174,16 @@
 
         // .calc-item__credit
         &__credit {
-            ol > :last-child {
+            ol li {
+                @media (min-width:1025px) {
+                    width: 110%;
+                }
+            }
+        }
+
+        // .calc-item__deposit
+        &__deposit {
+            ol li {
                 @media (min-width:1025px) {
                     width: 110%;
                 }
@@ -189,6 +211,8 @@
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 120%;
+                border-bottom: 2px solid rgba($color: $white, $alpha: 0.3);
+                background-color: none;
 
                 @media (max-width:768px) {
                     width: 33%;
@@ -200,7 +224,7 @@
                 }
 
                 &._active {
-                    border-bottom: 1px solid currentColor;
+                    border-color: $white;
                 }
             }
         }
@@ -440,6 +464,11 @@
         h2 {
             text-transform: unset;
             max-width: 370px;
+
+            @media (max-width:768px) {
+                text-transform: uppercase;
+                max-width: 335px;
+            }
         }
 
         p {
@@ -452,6 +481,10 @@
 
             @media (max-width:1024px) {
                 font-size: 16px;
+            }
+
+            @media (max-width:768px) {
+                max-width: 335px;
             }
         }
 
@@ -604,6 +637,7 @@
     ._btn {
         margin-top: 40px;
         width: fit-content;
+        font-size: 16px;
 
         @media (min-width:769px) {
             min-width: 128px;
@@ -741,7 +775,22 @@
             font-weight: 500;
             line-height: 120%;
             opacity: 0.7;
-            max-width: 400px;
+            max-width: 405px;
+
+            @media (max-width:768px){
+                font-size: 16px;
+                max-width: 350px;
+            }
+        }
+
+        h2 {
+            text-transform: unset;
+            max-width: 370px;
+
+            @media (max-width:768px){
+                text-transform: uppercase;
+                max-width: 275px;
+            }
         }
 
         ._btn {
