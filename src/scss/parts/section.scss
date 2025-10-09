@@ -385,7 +385,7 @@
                 display: none;
             }
 
-            label {
+            div {
                 display: block;
                 font-size: 24px;
                 font-weight: 600;
@@ -467,7 +467,7 @@
 
             @media (max-width:768px) {
                 text-transform: uppercase;
-                max-width: 335px;
+                max-width: 270px;
             }
         }
 

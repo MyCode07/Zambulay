@@ -8,7 +8,7 @@
 
 <main>
 
-    <section class="hero">
+    <section class="hero hero-home">
         <div class="hero-img">
             <img src="img/hero.png" class="_desktop" alt="">
             <img src="img/hero-mb.png" class="_mobile" alt="">
@@ -87,12 +87,12 @@
                     <h2>Управляй финансами в Zambulay</h2>
                     <div class="tab-btns">
                         <button data-tab="0" class="_active">Виртуальная карта</button>
-                        <button data-tab="1">Кредиты</button>
-                        <button data-tab="2">Вклады</button>
+                        <button data-tab="1" class="">Кредиты</button>
+                        <button data-tab="2" class="">Вклады</button>
                     </div>
                 </div>
                 <div class="tab-contnet">
-                    <div class="calc-item calc-item__card" data-tab-content="0">
+                    <div class="calc-item calc-item__card _active" data-tab-content="0">
                         <div class="grid grid-2">
                             <div class="calc-item__content">
                                 <div class="img">
@@ -116,7 +116,7 @@
                             @@include('html/parts/form.html',{})
                         </div>
                     </div>
-                    <div class="calc-item calc-item__credit" data-tab-content="1">
+                    <div class="calc-item calc-item__credit " data-tab-content="1">
                         <div class="grid grid-2">
                             <div class="calc-item__content">
                                 <div class="calc-func">
@@ -144,16 +144,16 @@
                                                 до <span>120 </span> дней
                                             </div>
                                         </div>
-                                        <input type="range" name="credit-days" min="10" max="120" value="10" step="1">
+                                        <input type="range" name="credit-period" min="10" max="120" value="10" step="1">
                                     </div>
                                     <div class="calc-func__total">
                                         <div class="total-value">
-                                            <label>105 000 USD</label>
+                                            <div><label>105 000</label> USD</div>
                                             <span>Сумма к возврату</span>
                                             <input type="hidden" name="credit-total" readonly value="105 000 USD">
                                         </div>
                                         <div class="total-percent">
-                                            <label>5%</label>
+                                            <div><label>5</label>%</div>
                                             <span>Процентная ставка</span>
                                             <input type="hidden" name="credit-percents" readonly value="5%">
                                         </div>
@@ -178,7 +178,7 @@
                             @@include('html/parts/form.html',{})
                         </div>
                     </div>
-                    <div class="calc-item calc-item__deposit _active" data-tab-content="2">
+                    <div class="calc-item calc-item__deposit " data-tab-content="2">
                         <div class="grid grid-2">
                             <div class="calc-item__content">
                                 <div class="calc-func">
@@ -193,7 +193,7 @@
                                                 до <span>300 000</span> USD
                                             </div>
                                         </div>
-                                        <input type="range" name="credit-value" min="10000" max="300000" value="100"
+                                        <input type="range" name="deposit-value" min="10000" max="300000" value="100"
                                             step="100">
                                     </div>
 
@@ -203,34 +203,34 @@
                                             <label for="deposit-period-3">
                                                 3 мес
                                                 <input type="radio" checked id="deposit-period-3" name="deposit-period"
-                                                    value="3 мес">
+                                                    value="90 мес">
                                             </label>
                                             <label for="deposit-period-6">
                                                 6 мес
                                                 <input type="radio" id="deposit-period-6" name="deposit-period"
-                                                    value="6 мес">
+                                                    value="180 мес">
                                             </label>
                                             <label for="deposit-period-12">
                                                 12 мес
                                                 <input type="radio" id="deposit-period-12" name="deposit-period"
-                                                    value="12 мес">
+                                                    value="360 мес">
                                             </label>
                                             <label for="deposit-period-18">
                                                 18 мес
                                                 <input type="radio" id="deposit-period-18" name="deposit-period"
-                                                    value="18 мес">
+                                                    value="480 мес">
                                             </label>
                                         </div>
                                     </div>
 
                                     <div class="calc-func__total">
                                         <div class="total-value">
-                                            <label>105 000 USD</label>
+                                            <div><label>105 000</label> USD</div>
                                             <span>Сумма к возврату</span>
                                             <input type="hidden" name="deposit-total" readonly value="105 000 USD">
                                         </div>
                                         <div class="total-percent">
-                                            <label>19%</label>
+                                            <div><label>19</label>%</div>
                                             <span>Процентная ставка</span>
                                             <input type="hidden" name="deposit-percents" readonly value="19%">
                                         </div>
@@ -336,8 +336,9 @@
                             <img src="img/icons/star.svg" alt="">
                         </div>
                         <h3>5.0</h3>
-                        <p>подтвержденный <a href="https://www.trustpilot.com/review/zambulay.com" target="_blank">рейтинг Trustpilot</a>
-                             за высокой уровень сервиса</p>
+                        <p>подтвержденный <a href="https://www.trustpilot.com/review/zambulay.com"
+                                target="_blank">рейтинг Trustpilot</a>
+                            за высокой уровень сервиса</p>
                     </div>
                     <div class="adv-item">
                         <div class="icon">

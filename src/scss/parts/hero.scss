@@ -109,6 +109,19 @@
         width: fit-content;
     }
 
+    // .hero-home
+    &-home {
+        .hero__body {
+            h1 {}
+
+            p {
+                @media (max-width:768px) {
+                    max-width: 314px;
+                }
+            }
+        }
+    }
+
     // .hero-page
     &-page {
         .hero__body {
@@ -326,6 +339,24 @@
                     height: 115%;
                 }
             }
+
+            .hero__body {
+                h1 {
+                    max-width: 725px;
+
+                    @media (max-width:768px) {
+                        max-width: 350px;
+                    }
+                }
+
+                p {
+                    max-width: 555px;
+
+                    @media (max-width:768px) {
+                        max-width: 340px;
+                    }
+                }
+            }
         }
 
         .hero__body {
@@ -386,10 +417,10 @@
 
             h1,
             p {
-                max-width: 850px;
+                max-width: 850px !important;
 
                 @media (max-width:768px) {
-                    max-width: 340px;
+                    max-width: 340px !important;
                 }
             }
 
@@ -400,21 +431,20 @@
     // .hero-deposit
     &-deposit {
         .hero__body {
-
             h1 {
                 @media (max-width:768px) {
-                    max-width: 340px;
+                    max-width: 340px !important;
                 }
             }
 
             p {
                 @media (max-width:768px) {
-                    max-width: 297px;
+                    max-width: 297px !important;
                 }
             }
 
-            ._btn{
-                @media (max-width:1024px){
+            ._btn {
+                @media (max-width:1024px) {
                     color: $black;
                     background-color: $white;
                 }

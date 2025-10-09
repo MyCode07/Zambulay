@@ -198,8 +198,12 @@
         }
     }
 
-    .current-lang * {
-        pointer-events: none;
+    .current-lang {
+        cursor: pointer;
+
+        * {
+            pointer-events: none;
+        }
     }
 
     li:not(.current-lang) {
