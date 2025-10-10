@@ -81,6 +81,10 @@ if (ranges.length) {
             percents = percents.replace('.0', '')
         }
 
+        if (periodEl.dataset.percent) {
+            percents = periodEl.dataset.percent
+        }
+
         percentEl.querySelector('label').textContent = percents
         percentEl.querySelector('input').value = percents
     }
