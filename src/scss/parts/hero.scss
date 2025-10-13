@@ -4,7 +4,7 @@
     border-radius: 30px;
     overflow: hidden;
     margin: 10px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 
     @media (max-width:1024px) {
         margin: 0;
@@ -55,7 +55,8 @@
 
     // .hero__body
     &__body {
-        padding: 121px 0;
+        padding-top: 121px;
+        padding-bottom: 121px;
         min-height: calc(100vh - 20px);
         max-height: calc(100vh - 20px);
 
@@ -177,6 +178,10 @@
     // .hero-googleads
     &-googleads {
         .hero__body {
+            @media (min-width:1025px) {
+                padding-top: 144px;
+            }
+
             img {
                 position: absolute;
                 bottom: -30%;
@@ -227,6 +232,10 @@
         }
 
         .hero__body {
+            @media (min-width:1025px) {
+                padding-top: 165px;
+            }
+
             @media (max-width:1024px) {
                 justify-content: flex-start;
                 padding-top: 114px;
@@ -254,7 +263,7 @@
 
         h1,
         p {
-            max-width: 520px !important;
+            max-width: 480px !important;
         }
 
         h1 {
@@ -276,6 +285,7 @@
             @media (min-width:1025px) {
                 width: 50%;
                 margin-left: auto;
+                padding-top: 195px;
             }
 
             @media (max-width:1024px) {
@@ -341,6 +351,10 @@
             }
 
             .hero__body {
+                @media (min-width:1025px) {
+                    padding-top: 144px;
+                }
+
                 h1 {
                     max-width: 725px;
 
@@ -408,16 +422,23 @@
         .hero__body {
             @media (max-width:1024px) {
                 justify-content: flex-start;
-                padding-top: 114px;
+                padding-top: 134px;
 
                 ._btn {
                     margin-top: auto;
                 }
             }
 
-            h1,
-            p {
+            h1 {
                 max-width: 850px !important;
+
+                @media (max-width:768px) {
+                    max-width: 340px !important;
+                }
+            }
+
+            p {
+                max-width: 600px !important;
 
                 @media (max-width:768px) {
                     max-width: 340px !important;
@@ -431,6 +452,10 @@
     // .hero-deposit
     &-deposit {
         .hero__body {
+            @media (min-width:1025px) {
+                padding-top: 164px;
+            }
+
             h1 {
                 @media (max-width:768px) {
                     max-width: 340px !important;

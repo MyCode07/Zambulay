@@ -35,17 +35,5 @@ if (tabAreas.length) {
                 });
             })
         })
-
-        if (tabs.length == 3 && window.innerWidth <= 768) {
-            tabs.forEach(item => {
-                item.classList.remove('_active');
-            });
-            content.forEach(item => {
-                item.classList.remove('_active');
-            });
-
-            tabs[1].classList.add('_active');
-            content[1].classList.add('_active');
-        }
     })
 }

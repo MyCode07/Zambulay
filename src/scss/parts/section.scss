@@ -1,5 +1,5 @@
 .section {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 
     @media (max-width:1024px) {
         margin-bottom: 64px;
@@ -50,7 +50,7 @@
 
 .calc {
     position: relative;
-    padding: 120px 0;
+    padding: 80px 0;
     border-radius: 20px;
     overflow: hidden;
     margin-inline: 10px;
@@ -62,7 +62,7 @@
 
     .section__top {
         color: $white;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
 
         @media (max-width:1204px) {
             margin-bottom: 48px;
@@ -124,8 +124,8 @@
             ol {
                 display: flex;
                 flex-direction: column;
-                gap: 24px;
-                padding: 32px;
+                gap: 14px;
+                padding: 24px;
 
                 @media (max-width:1024px) {
                     padding: 20px;
@@ -141,7 +141,7 @@
                     align-items: center;
                     gap: 16px;
                     color: $white;
-                    font-size: 20px;
+                    font-size: 16px;
                     font-weight: 500;
                     line-height: 120%;
 
@@ -153,8 +153,8 @@
                     img,
                     svg {
                         flex: 0 0 auto;
-                        width: 32px;
-                        height: 32px;
+                        width: 30px;
+                        height: 30px;
                         object-fit: contain;
 
                         @media (max-width:768px) {
@@ -175,18 +175,14 @@
         // .calc-item__credit
         &__credit {
             ol li {
-                @media (min-width:1025px) {
-                    width: 110%;
-                }
+                @media (min-width:1025px) {}
             }
         }
 
         // .calc-item__deposit
         &__deposit {
             ol li {
-                @media (min-width:1025px) {
-                    width: 110%;
-                }
+                @media (min-width:1025px) {}
             }
         }
     }
@@ -435,7 +431,7 @@
 
     .img {
         @media (min-width:769px) {
-            padding-right: 40px;
+            padding-right: 46px;
         }
 
         img,
@@ -463,7 +459,11 @@
 
         h2 {
             text-transform: unset;
-            max-width: 370px;
+            max-width: 390px;
+
+            @media (min-width:1025px) {
+                font-size: 50px;
+            }
 
             @media (max-width:768px) {
                 text-transform: uppercase;
@@ -694,6 +694,7 @@
         h3 {
             max-width: 270px;
             text-transform: uppercase;
+            line-height: 100%;
 
             @media (max-width:768px) {
                 max-width: 185px;
@@ -777,7 +778,7 @@
             opacity: 0.7;
             max-width: 405px;
 
-            @media (max-width:768px){
+            @media (max-width:768px) {
                 font-size: 16px;
                 max-width: 350px;
             }
@@ -787,7 +788,7 @@
             text-transform: unset;
             max-width: 370px;
 
-            @media (max-width:768px){
+            @media (max-width:768px) {
                 text-transform: uppercase;
                 max-width: 275px;
             }
