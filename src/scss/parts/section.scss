@@ -119,6 +119,12 @@
             gap: 24px;
             justify-content: space-between;
 
+            h4 {
+                @media (min-width:1025px) {
+                    font-size: 24px;
+                }
+            }
+
             .img {}
 
             ol {
@@ -427,6 +433,16 @@
 }
 
 .client {
+    padding: 120px 0;
+
+    @media (max-width:1024px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width:768px) {
+        padding: 0;
+    }
+
     .grid {}
 
     .img {
@@ -497,8 +513,32 @@
 }
 
 .adv {
+    padding-bottom: 20px;
+
+    @media (max-width:768px) {
+        padding-bottom: 0;
+    }
+
     .grid {
         gap: 24px;
+    }
+}
+
+.adv + .contact {
+    padding-top: 120px;
+
+    @media (max-width:124px) {
+        padding-top: 80px;
+    }
+
+    @media (max-width:768px) {
+        padding-top: 0;
+    }
+}
+
+.calc + .cabinet {
+    @media (min-width:1025px) {
+        margin-top: -80px;
     }
 }
 
@@ -509,6 +549,10 @@
     border-radius: 20px;
     overflow: hidden;
     margin-inline: 10px;
+
+    @media (min-width:1025px) {
+        margin-bottom: 120px;
+    }
 
     @media (max-width:1024px) {
         padding: 64px 0;
@@ -646,10 +690,6 @@
 }
 
 .contact {
-    @media (min-width:1025px) {
-        margin-bottom: 80px;
-    }
-
     .section__body {
         display: flex;
         gap: 24px;
@@ -763,6 +803,15 @@
 }
 
 .cabinet {
+    padding: 120px 0;
+
+    @media (max-width:1024px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width:768px) {
+        padding: 0;
+    }
 
     // .cabinet-content
     &-content {

@@ -1,0 +1,133 @@
+[data-lang="en"] {
+    .recomended-item {
+        p {
+            @media (min-width:769px) {
+                max-width: none;
+            }
+        }
+
+        &:last-child {
+            p {
+                @media (min-width:769px) {
+                    max-width: 390px;
+                }
+            }
+        }
+    }
+
+    .adv-item {
+        p {
+            @media (min-width:769px) {
+                max-width: 200px;
+            }
+        }
+
+        &:first-child {
+            p {
+                max-width: none;
+            }
+        }
+    }
+
+    .lk ol li p {
+        @media (min-width:769px) {
+            max-width: none;
+        }
+    }
+
+    .contact-item h3 {
+        max-width: none;
+    }
+
+    .hero-metaads {
+
+        h1,
+        p {
+            @media (min-width:769px) {
+                max-width: 520px !important;
+            }
+        }
+    }
+
+    .hero-applepay:not(.hero-grey) {
+        @media (min-width: 1025px) {
+            .hero__body {
+                width: 52%;
+            }
+        }
+
+        @media (min-width:769px) {
+
+            h1,
+            p {
+                max-width: none;
+            }
+        }
+    }
+
+    .hero-anyservice:not(.hero-grey) {
+        .hero__body p {
+            @media (min-width:769px) {
+                max-width: 655px;
+            }
+        }
+    }
+
+    .hero-credit .hero__body {
+        p {
+            @media (min-width:769px) {
+                max-width: 525px !important;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        .home-hero p {
+            max-width: 215px;
+        }
+
+        .ads-item p {
+            max-width: none;
+        }
+
+        .recomended h1 {
+            max-width: 320px;
+            margin-inline: auto;
+        }
+
+        .adv-item {
+            &:not(:first-child) {
+                p {
+                    font-size: 13px;
+                    max-width: 160px;
+                }
+            }
+        }
+
+        .hero-googleads .hero__body {
+            p {
+                max-width: 310px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .hero-metaads {
+
+            h1,
+            p {
+                max-width: 320px !important;
+            }
+        }
+
+        .hero-deposit .hero__body p {
+            max-width: 270px !important;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}

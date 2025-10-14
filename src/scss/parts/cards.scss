@@ -128,7 +128,7 @@
     }
 
     h3 {
-        max-width: 410px;
+        max-width: 380px;
         line-height: 100%;
 
         @media (min-width:1025px) {
@@ -137,15 +137,7 @@
     }
 
     &:first-child {
-        p {
-            max-width: 375px;
-
-            @media (max-width:768px) {
-                br {
-                    display: none;
-                }
-            }
-        }
+        p {}
     }
 
     &:last-child {
