@@ -78,6 +78,7 @@
             padding-top: 200px;
             padding-bottom: 200px;
             max-height: 1200px;
+            height: 1200px;
         }
 
         p {
@@ -316,6 +317,7 @@
         }
     }
 
+    .cabinet-content,
     .client-content {
         gap: 60px;
 
@@ -376,12 +378,14 @@
 
         h2 {
             font-size: 100px;
+            max-width: 850px;
         }
 
         ._btn {
             margin-top: 60px;
             font-size: 28px;
-            width: 200px;
+            min-width: 200px;
+            width: fit-content;
         }
 
         ol {
@@ -517,5 +521,119 @@
     ._text-box em,
     ._text-box i {
         font-size: 32px;
+    }
+
+    .hero-googleads .hero__body {
+        padding-top: 260px;
+
+        h1 {
+            max-width: 1350px;
+        }
+    }
+
+    .hero-metaads .hero__body {
+        padding-top: 260px;
+
+        h1 {
+            max-width: 1000px !important;
+        }
+
+        p {
+            max-width: 850px !important;
+        }
+    }
+
+    .hero-applepay .hero__body {
+        padding-top: 260px;
+
+        h1 {
+            max-width: 1000px;
+        }
+
+        p {
+            max-width: 890px;
+        }
+
+        img {
+            max-width: 830px;
+        }
+    }
+
+    .hero-anyservice:not(.hero-grey) {
+        .hero__body {
+            padding-top: 260px;
+
+            h1 {
+                max-width: 1250px;
+            }
+
+            p {
+                max-width: 960px;
+            }
+        }
+    }
+
+    .hero-credit {
+        .hero__body {
+            padding-top: 260px;
+
+            h1 {
+                max-width: 1050px !important;
+            }
+
+            p {
+                max-width: 1050px !important;
+            }
+        }
+    }
+
+    .hero-deposit {
+        .hero__body {
+            padding-top: 260px;
+
+            h1 {}
+
+            p {
+                max-width: 1050px !important;
+            }
+        }
+    }
+
+    [data-lang="en"] {
+        .recomended-item {
+            p {
+                max-width: 850px;
+            }
+
+            &:last-child p {
+                max-width: 780px;
+            }
+        }
+
+        .adv-item p {
+            max-width: 400px;
+        }
+
+        .lk h2 {
+            max-width: 850px;
+        }
+
+        .contact .contact-item h3 {
+            max-width: 580px;
+        }
+
+        .hero-anyservice:not(.hero-grey) .hero__body p {
+            max-width: 960px;
+        }
+
+        .hero-credit .hero__body {
+            h1 {
+                max-width: 1220px !important;
+            }
+
+            p {
+                max-width: 920px !important;
+            }
+        }
     }
 }
