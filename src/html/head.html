@@ -7,6 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@@title</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <style>
+        .wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+
+        @media (min-width:1025px) and (max-width:2560px) {
+            .hero__body {
+                max-height: 820px !important;
+            }
+        }
+
+        @media (min-width:1921px) {
+            .wrapper {
+                /* max-width: 100%; */
+            }
+        }
+
+
+        @media (min-width:1921px) and (max-width:2080px) {
+            /* ._container {
+                padding: 0 40px;
+            } */
+        }
+
+        @media (min-width:2561px) {
+            .wrapper {
+                max-width: 2560px;
+            }
+        }
+
+    </style>
 </head>
 
 <div class="pages">

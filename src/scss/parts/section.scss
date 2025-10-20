@@ -309,6 +309,10 @@
                 outline: none;
                 transition: opacity 0.2s;
 
+                @media (max-width:1204px){
+                    height: 4px;
+                }
+
                 @media (max-width:768px) {
                     left: 20px;
                     right: 20px;
@@ -323,8 +327,6 @@
                     cursor: pointer;
 
                     @media (max-width:768px) {
-                        width: 8px;
-                        height: 8px;
                     }
                 }
             }
@@ -426,6 +428,35 @@
             }
         }
     }
+
+    .form-succsess {
+        .icon {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 32px;
+            margin-top: 32px;
+            margin-inline: auto;
+
+            @media (max-width:1024px) {
+                margin-top: 24px;
+                margin-bottom: 24px;
+                width: 100px;
+                height: 100px;
+            }
+
+            picture,
+            img,
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .form__title {
+            flex: 1 1 auto;
+        }
+    }
 }
 
 .recomended {
@@ -452,7 +483,7 @@
 
         img,
         picture {
-            height: 100%;
+            height: auto;
             object-fit: cover;
             border-radius: 40px;
             display: block;
@@ -865,7 +896,7 @@
     .img {
         margin-right: 46px;
         border-radius: 40px;
-        height: fit-content;
+        height: auto;
         overflow: hidden;
         background-color: rgba($color: $black, $alpha: 0.03);
 
@@ -877,6 +908,7 @@
         img,
         picture {
             width: 100%;
+            height: auto;
         }
     }
 
