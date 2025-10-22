@@ -9,7 +9,7 @@
         &:last-child {
             p {
                 @media (min-width:769px) {
-                    max-width: 390px;
+                    max-width: 386px;
                 }
             }
         }
@@ -63,6 +63,16 @@
                 max-width: none;
             }
         }
+
+        @media (max-width:768px) {
+            h1 {
+                margin-top: 30px;
+            }
+
+            .hero__body img {
+                width: 104%;
+            }
+        }
     }
 
     .hero-anyservice:not(.hero-grey) {
@@ -79,6 +89,10 @@
                 max-width: 525px !important;
             }
         }
+    }
+
+    .home-hero p {
+        max-width: 530px;
     }
 
     @media (max-width:768px) {
@@ -111,6 +125,10 @@
                 br {
                     display: none;
                 }
+            }
+
+            img {
+                top: 45px;
             }
         }
 

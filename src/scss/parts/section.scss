@@ -91,6 +91,10 @@
             object-fit: cover;
             pointer-events: none;
             display: block;
+
+            @media (max-width:475px) {
+                object-position: 20%;
+            }
         }
     }
 
@@ -309,7 +313,7 @@
                 outline: none;
                 transition: opacity 0.2s;
 
-                @media (max-width:1204px){
+                @media (max-width:1204px) {
                     height: 4px;
                 }
 
@@ -326,8 +330,7 @@
                     border-radius: 50%;
                     cursor: pointer;
 
-                    @media (max-width:768px) {
-                    }
+                    @media (max-width:768px) {}
                 }
             }
         }
@@ -360,7 +363,7 @@
                     justify-content: center;
                     border-radius: 20px;
                     padding: 10px;
-                    height: 56px;
+                    height: 46px;
                     background-color: rgba($color: $white, $alpha: 0.2);
 
                     @media (max-width:768px) {
@@ -394,7 +397,6 @@
                 font-size: 24px;
                 font-weight: 600;
                 line-height: 110%;
-                margin-bottom: 4px;
 
                 @media (max-width:1024px) {
                     font-size: 22px;
@@ -410,6 +412,7 @@
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 110%;
+                margin-top: 2px;
 
                 @media (max-width:768px) {
                     font-size: 13px;
@@ -515,6 +518,7 @@
             @media (max-width:768px) {
                 text-transform: uppercase;
                 max-width: 270px;
+                font-size: 32px;
             }
         }
 
@@ -613,12 +617,12 @@
     &-img {
         position: absolute;
         bottom: 0;
-        right: 0;
         width: 828px;
         z-index: -1;
+        right: -20px;
 
-        @media (max-width:1440px) {
-            width: 700px;
+        @media (max-width:1200px) {
+            width: 750px;
         }
 
         @media (max-width:1024px) {
@@ -629,6 +633,7 @@
             width: 53%;
             bottom: unset;
             top: 123px;
+            right: 0;
         }
 
         @media (max-width:475px) {}
