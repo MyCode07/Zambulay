@@ -47,7 +47,7 @@
     // .header__logo
     &__logo {
         font-family: "Space Grotesk";
-        font-weight: 700;
+        font-weight: 600;
         line-height: 75%;
         @include adaptive-value('font-size', 24, 19, 1);
     }

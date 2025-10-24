@@ -73,17 +73,18 @@ if (ranges.length) {
 
         let total = Math.floor(amount + surcharge);
 
-        totalEl.querySelector('label').textContent = formatter.format(total)
-        totalEl.querySelector('input').value = formatter.format(total)
-
         percents = (time * rate * 100).toFixed(1);
         if (percents.includes('.0')) {
             percents = percents.replace('.0', '')
         }
 
         if (periodEl.dataset.percent) {
-            percents = periodEl.dataset.percent
+            percents = (15 / 360) * time
+            total = Math.floor(amount + (amount * percents) / 100);
         }
+
+        totalEl.querySelector('label').textContent = formatter.format(total)
+        totalEl.querySelector('input').value = formatter.format(total)
 
         percentEl.querySelector('label').textContent = percents
         percentEl.querySelector('input').value = percents
