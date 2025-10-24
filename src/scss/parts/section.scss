@@ -460,6 +460,16 @@
             flex: 1 1 auto;
         }
     }
+
+    // .calc-page
+    &-page {
+        h2 {
+            @media (max-width:768px) {
+                max-width: 310px;
+                margin-inline: auto;
+            }
+        }
+    }
 }
 
 .recomended {
