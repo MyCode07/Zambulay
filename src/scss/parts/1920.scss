@@ -1,0 +1,447 @@
+@media (min-width:1441px) and (max-width:2560px) {
+    ._container {
+        max-width: 1384px;
+    }
+
+    .wrapper {
+        max-width: 1896px;
+    }
+
+    .hero__body {
+        height: calc(100vh - 20px);
+        max-height: none !important;
+        min-height: 820px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 84px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    ._btn {
+        font-size: 26px;
+        height: 75px;
+        padding: 22px 32px;
+    }
+
+    .header__body {
+        gap: 20px;
+    }
+
+    .header__logo {
+        font-size: 32px;
+    }
+
+    .lang,
+    .header nav ul a {
+        font-size: 20px;
+    }
+
+    .header nav ul {
+        gap: 53px;
+    }
+
+    .lang {
+
+        svg,
+        img {
+            width: 14px;
+            height: 11px;
+        }
+    }
+
+    .header ._btn {
+        height: 64px;
+        font-size: 20px;
+    }
+
+    .hero__body {
+        padding-top: 174px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin: 22px 0;
+    }
+
+    .grid {
+        gap: 32px;
+    }
+
+    .section {
+        margin-bottom: 100px;
+    }
+
+    .section__top {
+        margin-bottom: 80px;
+    }
+
+    .ads-item {
+        padding: 42px;
+        border-radius: 54px;
+
+        .icon {
+            width: 84px;
+            height: 84px;
+            margin-bottom: 32px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        p {
+            margin-top: 8px;
+            font-size: 20px;
+        }
+    }
+
+    .calc {
+        padding: 125px 0;
+        border-radius: 20px;
+
+        .section__top {
+            margin-bottom: 32px;
+        }
+
+        .tab-btns {
+            margin-top: 32px;
+
+            button {
+                font-size: 26px;
+                height: 84px;
+                width: 293px;
+            }
+        }
+
+        .calc-func {
+            padding: 42px;
+            border-radius: 54px;
+            gap: 32px;
+
+            h4 {
+                font-size: 32px;
+            }
+
+            .input-range {
+                p {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .input-range__output {
+                    height: 74px;
+                    border-radius: 26px;
+                    padding: 24px;
+
+                    div {
+                        font-size: 20px;
+                    }
+                }
+
+                input {
+                    height: 3px;
+
+                    &::-webkit-slider-thumb {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            .input-button {
+                p {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                div {
+                    gap: 10px;
+
+                    label {
+                        font-size: 20px;
+                        border-radius: 26px;
+                        height: 60px;
+                    }
+                }
+            }
+
+            .calc-func__total {
+                div {
+                    font-size: 32px;
+                }
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .calc-item {
+        border-radius: 98px;
+        padding: 48px;
+    }
+
+    .calc-item__content ol {
+        padding: 32px;
+        gap: 18px;
+
+        li {
+            gap: 18px;
+            font-size: 20px;
+
+            img,
+            svg {
+                width: 38px;
+                height: 38px;
+            }
+        }
+    }
+
+    .form {
+        padding: 38px;
+        border-radius: 50px;
+
+        .progress {
+            margin-bottom: 42px;
+            height: 12px;
+        }
+
+        ._btn {
+            margin-top: 56px;
+        }
+    }
+
+    .form__title {
+        gap: 10px;
+        margin-bottom: 42px;
+
+        h4 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .form__item {
+        margin-bottom: 18px;
+
+        input,
+        textarea,
+        select {
+            font-size: 20px;
+            height: 64px;
+            padding: 16px 24px;
+            border-radius: 20px;
+        }
+    }
+
+    .form__row {
+        gap: 18px;
+        margin-bottom: 18px;
+    }
+
+    .recomended-item {
+        padding: 48px;
+        border-radius: 52px;
+
+        .img {
+            width: 118px;
+            height: 118px;
+            margin-bottom: 42px;
+        }
+
+        h3 {
+            font-size: 32px;
+            max-width: 420px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 16px;
+            max-width: 420px;
+        }
+
+        &:first-child {
+            .img {
+                max-width: 470px;
+            }
+        }
+
+        &:last-child {
+            h3 {
+                max-width: 470px;
+            }
+
+            p {
+                max-width: 580px;
+            }
+        }
+    }
+
+    .client-content {
+        gap: 32px;
+
+        h2 {
+            font-size: 64px;
+            max-width: 500px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .adv-item {
+        padding: 80px 42px;
+        border-radius: 54px;
+
+        .icon {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 48px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 16px;
+            max-width: 270px;
+        }
+
+        &:first-child {
+            p {
+                max-width: 220px;
+            }
+        }
+    }
+
+    .lk {
+        margin-bottom: 160px;
+        padding: 160px 0;
+
+        ol {
+            gap: 32px;
+
+            li {
+                padding: 42px;
+                border-radius: 42px;
+
+                h5 {
+                    font-size: 32px;
+                }
+
+                .icon {
+                    width: 64px;
+                    height: 64px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin-top: 12px;
+                    max-width: 430px;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 84px;
+        }
+
+        ._btn {
+            font-size: 20px;
+            margin-top: 54px;
+            min-width: 165px;
+        }
+
+        .lk-img {
+            width: 1100px;
+        }
+    }
+
+    ._social {
+        gap: 16px;
+
+        a,
+        button {
+            gap: 12px;
+            border-radius: 16px;
+            padding: 16px;
+            font-weight: 500;
+
+            img,
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .contact-item {
+        padding: 54px 54px 42px 54px;
+        border-radius: 54px;
+
+        h3 {
+            font-size: 42px;
+            max-width: 300px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 22px;
+            max-width: 360px;
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .footer__logo .logo {
+        font-size: 32px;
+    }
+
+    .footer {
+        padding: 106 0px;
+
+        nav {
+            li {
+                &:not(:has(a)) {
+                    font-size: 20px;
+                    margin-bottom: 22px;
+                }
+
+                &:has(a):not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .footer__bottom {
+        font-size: 20px;
+        padding-top: 32px;
+        margin-top: 32px;
+    }
+}
