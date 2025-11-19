@@ -444,4 +444,141 @@
         padding-top: 32px;
         margin-top: 32px;
     }
+
+    .cabinet-content {
+        gap: 32px;
+
+        h2 {
+            max-width: 500px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .links {
+        .accordion__item {
+            padding: 42px;
+            border-radius: 54px;
+
+            h3 {
+                font-size: 32px;
+            }
+
+            .accordion__item-title {
+
+                img,
+                svg {
+                    width: 23px;
+                }
+            }
+
+            .accordion__item-content-height {
+                nav {
+                    margin-top: 42px;
+                    gap: 100px;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 18px;
+                        }
+
+                        &.links-title {
+                            font-size: 24px;
+                            margin-bottom: 32px;
+                        }
+
+                        a {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-googleads {
+        .hero__body {
+            h1 {
+                max-width: 1040px;
+            }
+
+            img {
+                max-width: 1386px;
+                bottom: -23%;
+                right: -90px;
+            }
+        }
+    }
+
+    .hero-metaads {
+        h1 {
+            max-width: 700px;
+        }
+
+        p {
+            max-width: 480px;
+        }
+
+        .hero__body img {
+            max-width: 1800px;
+            right: -550px;
+        }
+    }
+
+    .hero-applepay {
+        .hero__body {
+            img {
+                max-width: 740px;
+                bottom: -20px;
+            }
+        }
+    }
+
+    .hero-anyservice:not(.hero-grey) {
+        .hero__body {
+            h1 {
+                max-width: 1050px;
+            }
+        }
+    }
+
+    .hero-deposit {
+        .hero__body {
+            img {
+                width: 86% !important;
+            }
+        }
+    }
+
+    [data-lang=en] {
+        .recomended-item {
+            p {
+                max-width: 440px;
+            }
+
+            &:last-child {
+                p {
+                    max-width: 480px;
+                }
+            }
+        }
+
+        .adv-item p {
+            max-width: 270px;
+        }
+
+        .hero-metaads {
+
+            h1,
+            p {
+                max-width: 700px !important;
+            }
+        }
+
+        .hero-credit .hero__body h1 {
+            max-width: 1050px !important;
+        }
+    }
 }
