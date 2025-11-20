@@ -67,6 +67,12 @@
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 130%;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
@@ -94,10 +100,23 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 130%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
 
         p,
         a {
             opacity: 0.7;
+        }
+
+        a {
+            @media (any-hover: hover) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 }

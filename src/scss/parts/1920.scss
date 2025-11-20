@@ -7,9 +7,13 @@
         max-width: 1896px;
     }
 
+    body {
+        font-size: 20px;
+    }
+
     .hero__body {
         height: calc(100vh - 20px);
-        max-height: none !important;
+        max-height: 1000px !important;
         min-height: 820px;
     }
 
@@ -27,6 +31,10 @@
 
     h3 {
         font-size: 32px;
+    }
+
+    h4 {
+        font-size: 24px;
     }
 
     ._btn {
@@ -532,6 +540,9 @@
             img {
                 max-width: 740px;
                 bottom: -20px;
+                object-fit: contain;
+                object-position: left;
+                max-height: 90vh;
             }
         }
     }
@@ -549,6 +560,32 @@
             img {
                 width: 86% !important;
             }
+        }
+    }
+
+    .hero-text {
+        .hero__body {
+            min-height: unset !important;
+            max-height: unset !important;
+            height: unset !important;
+        }
+    }
+
+    ._text-box {
+
+        p,
+        ol,
+        ul,
+        a,
+        b,
+        strong,
+        em,
+        i {
+            font-size: 20px;
+        }
+
+        figcaption {
+            font-size: 18px;
         }
     }
 

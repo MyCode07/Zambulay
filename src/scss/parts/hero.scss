@@ -591,7 +591,9 @@
     // .hero-text
     &-text {
         .hero__body {
-            min-height: unset;
+            min-height: unset !important;
+            max-height: unset !important;
+            height: unset !important;
 
             h1 {
                 @media (max-width:475px) {
