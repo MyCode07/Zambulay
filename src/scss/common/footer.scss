@@ -117,11 +117,26 @@
             }
         }
 
-        ._text-box{
+        ._text-box {
+            color: rgba($color: $black, $alpha: 0.7);
             font-size: 0.75em;
 
-            *{
+            * {
                 font-size: inherit;
+                line-height: 130%;
+            }
+
+            ul,
+            ol {
+                padding-left: 1.5em;
+
+                li::marker {
+                    font-size: 0.6em;
+                }
+
+                & > :not(:last-child) {
+                    margin-bottom: 0em;
+                }
             }
         }
     }
