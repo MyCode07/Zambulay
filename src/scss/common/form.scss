@@ -206,6 +206,11 @@
         width: 100%;
         margin-top: 40px;
 
+        &[disabled] {
+            opacity: 0.5;
+            cursor: no-drop;
+        }
+
         @media (max-width:768px) {
             margin-top: 24px;
         }
